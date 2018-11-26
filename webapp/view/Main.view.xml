@@ -1,0 +1,123 @@
+<mvc:View controllerName="com.pabz.ConfermaVincita.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:commons="sap.ui.commons">
+	<App id="idAppControl">
+		<pages>
+			<Page showHeader="false">
+				<content>
+					<f:Form editable="false" width="100%">
+						<f:layout>
+							<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+								emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+						</f:layout>
+						<f:formContainers>
+							<f:FormContainer title="{i18n>requester}">
+								<f:formElements>
+									<f:FormElement label="{i18n>surname} {i18n>name}">
+										<f:fields>
+											<Text text="{/surname} {/name}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>owner}">
+										<f:fields>
+											<Text text="{/owner}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>piva}">
+										<f:fields>
+											<Text text="{/piva}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>fiscalCode}">
+										<f:fields>
+											<Text text="{/fiscalCode}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>sector}">
+										<f:fields>
+											<Text text="{i18n>craft}" visible="{/craft}"/>
+											<Text text="{i18n>industry}" visible="{/industry}"/>
+											<Text text="{i18n>trade}" visible="{/trade}"/>
+											<Text text="{i18n>services}" visible="{/services}"/>
+											<Text text="{i18n>freelance}" visible="{/freelance}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>state}">
+										<f:fields>
+											<Text text="{/state}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>region}">
+										<f:fields>
+											<Text text="{/region}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>postCode}">
+										<f:fields>
+											<Text text="{/postCode}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>city}">
+										<f:fields>
+											<Text text="{/city}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>district}">
+										<f:fields>
+											<Text text="{/district}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>street}">
+										<f:fields>
+											<Text text="{/street}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>streetNumber}">
+										<f:fields>
+											<Text text="{/streetNumber}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>telephone}">
+										<f:fields>
+											<Text text="{/telephone}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>mail}">
+										<f:fields>
+											<Text text="{/mail}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>pec}">
+										<f:fields>
+											<Text text="{/pec}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>iban}">
+										<f:fields>
+											<Text text="{/iban}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="{i18n>language}">
+										<f:fields>
+											<Text text="{i18n>italian}" visible="{/italian}"/>
+											<Text text="{i18n>german}" visible="{/german}"/>
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>
+							<f:FormContainer>
+								<f:formElements>
+									<f:FormElement>
+										<f:fields>
+											<FormattedText htmlText="{i18n>invText}" width="100%"/>
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>
+						</f:formContainers>
+					</f:Form>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
